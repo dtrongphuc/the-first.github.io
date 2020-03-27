@@ -13,10 +13,12 @@
 .header__with-search {
     display: flex;
     align-items: center;
+    padding: 4px 0;
+    height: var(--height-navbar-with-search);
 }
 
 .header__top {
-    padding-top: 16px;
+    padding-top: 12px;
     width: 100%;
 }
 
@@ -617,7 +619,9 @@
 
 .product-item__name a,
 .product-item__author a,
-.product-item__intro {
+.product-item__intro,
+.new-box__name a,
+.new-box__author a {
     font-weight: 300;
     text-align: left;
     display: -webkit-box;
@@ -630,7 +634,8 @@
     margin-bottom: 4px;
 }
 
-.product-item__name a {
+.product-item__name a,
+.new-box__name {
     color: var(--text-color);
     font-size: 1.3rem;
     line-height: 1.7rem;
@@ -639,13 +644,16 @@
 .product-item__author a,
 .product-item__vote,
 .product-item__intro,
-.product-item__view {
+.product-item__view,
+.new-box__author a,
+.new-box__vote {
     color: rgb(136,136,151);
     font-size: 1.1rem;
     line-height: 1.2rem;
 }
 
-.product-item__author a {
+.product-item__author a,
+.new-box__author a {
     -webkit-line-clamp: 1;
 }
 
@@ -907,4 +915,73 @@
     color: #3A4752;
     font-weight: 600;
     line-height: 1.2rem;
+}
+/* New */
+.new-box__container {
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.new-box__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 12px 14px;
+    border-bottom: 1px solid #ECEDEE;
+}
+
+.new-box__heading a{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #3A4752;
+}
+
+.new-box__heading a:hover {
+    color: var(--primary-color);
+}
+
+.new-box__view-all {
+    color: var(--primary-color);
+}
+
+.new-box__view-all:hover {
+    text-decoration: underline;
+}
+
+.new-box__body {
+    margin-top: 20px;
+    padding: 0 12px;
+}
+
+.new-box__book {
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.new-box__img {
+    width: 176px;
+    height: 244px;
+}
+
+.new-box__name a{
+    display: block;
+    margin: 0 10px;
+}
+
+.new-box__author a{
+    display: block;
+    margin: 4px 10px 8px;
+}
+
+.new-box__footer {
+    border-top: 1px solid #DFDFDF;
+    margin: 2px 10px 0;
+    padding: 2px 0;
+}
+
+.new-box__vote {
+    font-size: 1.3rem;
 }
