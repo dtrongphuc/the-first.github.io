@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/layout/grid.css">
+    <link rel="stylesheet" href="./assets/css/layout/header.css">
+    <title>Waka - Nghe, đọc sách online mọi lúc, mọi nơi, trên mọi thiết bị</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__top">
+                    <div class="header__with-search">
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link">
+                                <img src="./assets/img/logo-waka.png" alt="Waka logo" class="header__logo-img">
+                            </a>
+                        </div>
+                        <div class="header__search--wrapper">
+                            <input type="text" placeholder="Nhập tên sách, tuyển tập, tác giả,..." class="header__search-input">
+                            <button class="btn primary-color header__search-btn">Tìm kiếm</button>
+                        </div>
+                        <div class="header__vip">
+                            <a href="#" class="header__vip-link"></a>
+                        </div>
+                        <div class="header__login">
+                            <button class="btn primary-color header__login-btn">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__with-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Tại sao chọn Waka</a>
+                                <div class="header__nav-info">
+                                    <a href="#" class="header__nav-info-link">Giới thiệu</a>
+                                    <a href="#" class="header__nav-info-link">Quyền lợi chung</a>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Chia sẻ độc giả</a>
+                                <div class="header__nav-feedback ">
+                                    <h2 class="header__nav-feedback-title">Độc giả nói gì về waka</h2>
+                                    <div class="header__nav-feedback-row">
+                                        <div class="header__nav-feedback-item">
+                                            <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                            <div class="corner-top-left"></div>
+                                            <div class="header__nav-feedback-avt-cus1"></div>
+                                            <div class="header__nav-feedback-name">Vũ Phong</div>
+                                            <p class="header__nav-feedback-text">Biết đến Waka là một điều hạnh phúc hơn cả có người yêu.</p>
+                                            <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                            <div class="corner-bottom-right"></div>
+                                        </div>
+                                        <div class="header__nav-feedback-item">
+                                            <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                            <div class="corner-top-left"></div>
+                                            <div class="header__nav-feedback-avt-cus2"></div>
+                                            <div class="header__nav-feedback-name">Lương Hoàng Minh</div>
+                                            <p class="header__nav-feedback-text">Nhờ Waka, tôi tìm được ánh sáng để thay đổi cuộc đời mình, tôi đã trưởng thành và mạnh mẽ hơn.</p>
+                                            <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                            <div class="corner-bottom-right"></div>
+                                        </div>
+                                        <div class="header__nav-feedback-item">
+                                            <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                            <div class="corner-top-left"></div>
+                                            <div class="header__nav-feedback-avt-cus3"></div>
+                                            <div class="header__nav-feedback-name">Trần Tuệ Tĩnh</div>
+                                            <p class="header__nav-feedback-text">Waka là một app đọc sách không thể tuyệt vời hơn, góp phần phát triển văn hoá đọc và dân trí Việt.</p>
+                                            <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                            <div class="corner-bottom-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Báo chí nói về Waka</a>
+                                <div class="header__nav-feedback">
+                                    <h2 class="header__nav-feedback-title">Báo chí viết gì về waka</h2>
+                                    <div class="header__nav-feedback-row">
+                                        <div class="header__nav-feedback-item">
+                                            <a href="">
+                                                <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                                <div class="corner-top-left"></div>
+                                                <div class="header__nav-news">
+                                                    <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.article/0/0/0/70_icon.png?v=1&time=1585181923" alt="Đọc sách online trên Waka" class="header__nav-news-img">
+                                                </div>
+                                                <p class="header__nav-feedback-text">Báo cáo thị trường được Waka thực hiện và công bố định kỳ 6 tháng 1 lần đã cung cấp một cái nhìn toàn cảnh, độc lập và đáng tin cậy về lĩnh vực sách điện tử.</p>
+                                                <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                                <div class="corner-bottom-right"></div>
+                                            </a>
+                                        </div>
+                                        <div class="header__nav-feedback-item">
+                                            <a href="">
+                                                <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                                <div class="corner-top-left"></div>
+                                                <div class="header__nav-news">
+                                                    <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.article/0/0/0/72_icon.png?v=1&time=1585167133" alt="Đọc sách online trên Waka" class="header__nav-news-img">
+                                                </div>
+                                                <p class="header__nav-feedback-text">Hàng vạn cuốn sách điện tử trên Waka.vn sẽ giúp bạn dễ dàng thoả mãn ước mơ "giáo sư" theo cách ít tốn công sức nhất, chỉ cần 1 cái chạm tay!</p>
+                                                <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                                <div class="corner-bottom-right"></div>
+                                            </a>
+                                        </div>
+                                        <div class="header__nav-feedback-item">
+                                            <a href="">
+                                                <i class="header__nav-quote-icon icon__top-left fas fa-quote-right"></i>
+                                                <div class="corner-top-left"></div>
+                                                <div class="header__nav-news">
+                                                    <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.article/0/0/0/30_icon.png?v=2&time=1585167207" alt="Đọc sách online trên Waka" class="header__nav-news-img">
+                                                </div>
+                                                <p class="header__nav-feedback-text">Độc giả Việt Nam đang ngày càng có xu hướng ưu tiên cho hoạt động đọc sách điện tử.</p>
+                                                <i class="header__nav-quote-icon icon__bottom-right fas fa-quote-right"></i>
+                                                <div class="corner-bottom-right"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="header__nav-feedback-footer">Xem tất cả</a>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Toàn cảnh Waka</a>
+                                <div class="header__nav-info">
+                                    <a href="#" class="header__nav-info-link">Báo cáo thị trường sách điện tử</a>
+                                    <a href="#" class="header__nav-info-link">Chương trình Thử thách đọc sách</a>
+                                    <a href="#" class="header__nav-info-link">Công bố bản quyền</a>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Tuyển dụng</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="javascript:;" class="header__nav-link">Diễn đàn</a>
+                                <span class="header__nav-item-icon">NEW</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="grid wide">
+                <div class="home-banner">
+                    <div class="home-banner__icon banner-icon-left">
+                        <i class="fal fa-chevron-left"></i>
+                    </div>
+                    <div class="home-banner__swaper">
+                        <a href="" class="home-banner__link">
+                            <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.banner/0/0/0/1455_new.jpg?v=2&w=1580&h=400" width="1200px" height="278px" alt="" class="home-banner__img">
+                        </a>
+                    </div>
+                    <!-- <div class="home-banner__swaper" style="z-index: 1; animation-delay: 3s;">
+                        <a href="" class="home-banner__link">
+                            <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.banner/0/0/0/1469_new.jpg?v=5&w=1580&h=400" width="1200px" height="278px" alt="" class="home-banner__img">
+                        </a>
+                    </div>
+                    <div class="home-banner__swaper">
+                        <a href="" class="home-banner__link">
+                            <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.banner/0/0/0/1473_new.jpg?v=5&w=1580&h=400" width="1200px" height="278px" alt="" class="home-banner__img">
+                        </a>
+                    </div>
+                    <div class="home-banner__swaper">
+                        <a href="" class="home-banner__link">
+                            <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.banner/0/0/0/1461_new.jpg?v=4&w=1580&h=400" width="1200px" height="278px" alt="" class="home-banner__img">
+                        </a>
+                    </div>
+                    <div class="home-banner__swaper">
+                        <a href="" class="home-banner__link">
+                            <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.banner/0/0/0/945_new.jpg?v=3&w=1580&h=400" width="1200px" height="278px" alt="" class="home-banner__img">
+                        </a>
+                    </div> -->
+                    <div class="home-banner__icon banner-icon-right ">
+                        <i class="fal fa-chevron-right"></i>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <main class="home">
+            <!-- Main product -->
+            <section class="home-container">
+                <div class="grid wide">
+                    <div class="row">
+                        <!-- Navbar -->
+                        <div class="col l-3">
+                            <div class="category">
+                                <div class="category-heading-wrapper">
+                                    <h2 class="category__heading">Danh mục</h2>
+                                    <i class="fal fa-list-ul"></i>
+                                </div>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Sách nói</a>
+                                        <span class="category-item__count">1,046</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Sách nói</h2>
+                                                <span class="category-info__count">1,046</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Truyện đọc</a>
+                                                    <span class="category-info-item__count">45</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Phát triển bản thân</a>
+                                                    <span class="category-info-item__count">206</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Bí quyết kinh doanh</a>
+                                                    <span class="category-info-item__count">552</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Hạt giống tâm hồn</a>
+                                                    <span class="category-info-item__count">19</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Truyện thiếu nhi</a>
+                                                    <span class="category-info-item__count">224</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Kinh doanh</a>
+                                        <span class="category-item__count">1,127</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Kinh doanh</h2>
+                                                <span class="category-info__count">1,127</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Khởi nghiệp</a>
+                                                    <span class="category-info-item__count">80</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Marketing - Bán hàng</a>
+                                                    <span class="category-info-item__count">247</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Quản trị - Lãnh đạo</a>
+                                                    <span class="category-info-item__count">341</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Đầu tư - Tài chính</a>
+                                                    <span class="category-info-item__count">87</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kiến thức kinh tế</a>
+                                                    <span class="category-info-item__count">207</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kinh doanh tổng hợp</a>
+                                                    <span class="category-info-item__count">165</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Ngôn tình</a>
+                                        <span class="category-item__count">3,436</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Ngôn tình</h2>
+                                                <span class="category-info__count">3,436</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Cổ trang</a>
+                                                    <span class="category-info-item__count">633</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Hiện đại</a>
+                                                    <span class="category-info-item__count">341</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Xuyên không</a>
+                                                    <span class="category-info-item__count">550</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Trùng sinh</a>
+                                                    <span class="category-info-item__count">457</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Huyền ảo</a>
+                                                    <span class="category-info-item__count">257</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Kỹ năng</a>
+                                        <span class="category-item__count">1,194</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Kỹ năng</h2>
+                                                <span class="category-info__count">1,194</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Nghệ thuật sống</a>
+                                                    <span class="category-info-item__count">429</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kỹ năng làm việc</a>
+                                                    <span class="category-info-item__count">359</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Hướng nghiệp</a>
+                                                    <span class="category-info-item__count">65</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kỹ năng sống</a>
+                                                    <span class="category-info-item__count">341</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tác phẩm kinh điển</a>
+                                        <span class="category-item__count">37</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Tác phẩm kinh điển</h2>
+                                                <span class="category-info__count">37</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Tiểu thuyết</a>
+                                                    <span class="category-info-item__count">37</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Chăm sóc gia đình</a>
+                                        <span class="category-item__count">550</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Chăm sóc gia đình</h2>
+                                                <span class="category-info__count">550</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Chăm sóc sức khoẻ</a>
+                                                    <span class="category-info-item__count">126</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Nuôi dạy con</a>
+                                                    <span class="category-info-item__count">239</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Tâm lý - Giới tính</a>
+                                                    <span class="category-info-item__count">100</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Phụ nữ - Làm đẹp</a>
+                                                    <span class="category-info-item__count">85</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Văn học</a>
+                                        <span class="category-item__count">2,680</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Văn học</h2>
+                                                <span class="category-info__count">2,680</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Thơ - Tản văn</a>
+                                                    <span class="category-info-item__count">286</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Truyện dài - Tiểu thuyết</a>
+                                                    <span class="category-info-item__count">771</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Trinh thám</a>
+                                                    <span class="category-info-item__count">429</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kiếm hiệp</a>
+                                                    <span class="category-info-item__count">262</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Truyện ngắn</a>
+                                                    <span class="category-info-item__count">360</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Hài hước</a>
+                                                    <span class="category-info-item__count">137</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Giả tưởng</a>
+                                                    <span class="category-info-item__count">84</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Tự truyện</a>
+                                                    <span class="category-info-item__count">91</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kinh dị</a>
+                                                    <span class="category-info-item__count">201</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Văn học Teen</a>
+                                                    <span class="category-info-item__count">29</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Nhân vật - Sự kiện</a>
+                                        <span class="category-item__count">168</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Nhân vật - Sự kiện</h2>
+                                                <span class="category-info__count">168</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Nhân vật</a>
+                                                    <span class="category-info-item__count">136</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Sự kiện</a>
+                                                    <span class="category-info-item__count">32</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Văn hoá - Xã hội</a>
+                                        <span class="category-item__count">536</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Văn hoá - Xã hội</h2>
+                                                <span class="category-info__count">536</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Chính trị - Pháp luật</a>
+                                                    <span class="category-info-item__count">85</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Tôn giáo - Tâm linh</a>
+                                                    <span class="category-info-item__count">185</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Khoa học xã hội</a>
+                                                    <span class="category-info-item__count">108</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Văn hoá nghệ thuật</a>
+                                                    <span class="category-info-item__count">91</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Giáo dục</a>
+                                                    <span class="category-info-item__count">67</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Khoa học - Công nghệ</a>
+                                        <span class="category-item__count">34</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Khoa học - Công nghệ</h2>
+                                                <span class="category-info__count">34</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kỹ thuật - Công nghệ</a>
+                                                    <span class="category-info-item__count">26</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Kiến thức khoa học</a>
+                                                    <span class="category-info-item__count">8</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Thiếu nhi</a>
+                                        <span class="category-item__count">273</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Thiếu nhi</h2>
+                                                <span class="category-info__count">273</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Cổ tích - Thần thoại</a>
+                                                    <span class="category-info-item__count">80</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Bài học cuộc sống</a>
+                                                    <span class="category-info-item__count">78</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Văn học thiếu nhi</a>
+                                                    <span class="category-info-item__count">115</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tạp chí & Chuyên đề</a>
+                                        <span class="category-item__count">19</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Tạp chí & Chuyên đề</h2>
+                                                <span class="category-info__count">19</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Chuyên đề</a>
+                                                    <span class="category-info-item__count">13</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Tạp chí</a>
+                                                    <span class="category-info-item__count">6</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Truyện tranh</a>
+                                        <span class="category-item__count">192</span>
+                                        <div class="category-item-info">
+                                            <div class="category-info-title">
+                                                <h2 class="category-info__heading">Truyện tranh</h2>
+                                                <span class="category-info__count">192</span>
+                                            </div>
+                                            <ul class="category-info-list">
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Thiếu nhi</a>
+                                                    <span class="category-info-item__count">68</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">VnComic</a>
+                                                    <span class="category-info-item__count">59</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Sports</a>
+                                                    <span class="category-info-item__count">19</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Romance</a>
+                                                    <span class="category-info-item__count">5</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Action</a>
+                                                    <span class="category-info-item__count">36</span>
+                                                </li>
+                                                <li class="category-info-item">
+                                                    <a href="" class="category-info-item__link">Drama</a>
+                                                    <span class="category-info-item__count">5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tuyển tập chọn lọc</a>
+                                        <span class="category-item__count">223</span>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tủ sách thiết kế</a>
+                                        <span class="category-item__count">3</span>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Nhà xuất bản</a>
+                                        <span class="category-item__count">52</span>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tác giả</a>
+                                        <span class="category-item__count">3,921</span>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Tin tức Waka</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Product -->
+                        <div class="col l-9">
+                            <div class="product-container">
+                                <div class="home-filter">
+                                    <a href="" class="home-filter-heading-link">
+                                        <h2 class="home-filter__heading">Miễn phí HOT</h2>
+                                    </a>
+                                    <ul class="home-filter-list">
+                                        <li class="filter-item filter-item--active">
+                                            <a href="javascript:void(0)" class="filter-item__link">Tất cả</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a href="javascript:void(0)" class="filter-item__link">Văn học</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a href="javascript:void(0)" class="filter-item__link">Ngôn tình</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a href="javascript:void(0)" class="filter-item__link">Kinh doanh</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a href="javascript:void(0)" class="filter-item__link">Kỹ năng</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a href="javascript:void(0)" class="filter-item__link">Sách nói</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="home-product">
+                                    <div class="row">
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/20802.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nhặt được vương phi tham tiền - Tập 1" title="Nhặt được vương phi tham tiền - Tập 1" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Nhặt được vương phi tham tiền - Tập 1</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">Tự Cẩm</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 100%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">578 votes</p>
+                                                        <div class="product-item__intro">Hạ Sơ Thất – bác sỹ quân y quân hàm Trung úy trong bộ đội đặc công, chỉ vì lấy trộm chiếc gương gỗ đào của một người bạn mà xuyên tới vùng nông thôn ở một triều đại cổ xưa nào đó. </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">33,170 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/19373.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nhật ký cua trai của Nữ phụ - Tập 2" title="Nhật ký cua trai của Nữ phụ - Tập 2" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Nhật ký cua trai của Nữ phụ - Tập 2</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">Mao Mao Ru</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 100%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">417 votes</p>
+                                                        <div class="product-item__intro">"XA THẤY KHÔNG PHẢI TUYẾT. VÌ NGHE THOẢNG MÙI HƯƠNG"
+
+                                                            "Xa thấy không phải tuyết. Vì nghe thoảng mùi hương", thử hỏi trên đời này liệu có ai không đau lòng, không xót xa khi người mình thương lại đổi tên chỉ vì đôi câu thơ của cô gái khác?
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">20,094 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/700.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nơi nào đông ấm (Tập 1)" title="Nơi nào đông ấm (Tập 1)" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Nơi nào đông ấm (Tập 1)</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">Cố Tây Tước</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 95%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">396 votes</p>
+                                                        <div class="product-item__intro">
+                                                            Nội dung cuốn tiểu thuyết Nơi nào đông ấm của Cố Tây Tước không có gì mới lạ, một cốt truyện bình thường, nhưng cái khiến đọc giả không thể quên ở câu chuyện này chính là cách tác giả xây dựng tính cách của từng nhân vật trong truyện, cách họ gặp nhau, cách họ xa nhau, cách họ bên nhau,...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">18,940 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/629.jpg?v=2&w=200&h=292" width="120" height="176" alt="Từng có một người yêu tôi như sinh mệnh (Tập 1)" title="Từng có một người yêu tôi như sinh mệnh (Tập 1)" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Từng có một người yêu tôi như sinh mệnh (Tập 1)</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">Thư Nghi</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 95%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">439 votes</p>
+                                                        <div class="product-item__intro">
+                                                            Giới thiệu cuốn sách Từng Có Một Người Yêu Tôi Như Sinh Mệnh của Thư Nghi:
+
+                                                        Câu chuyện miêu tả cuộc đời của một cô sinh viên bình thường sống ở đất nước Ukraine phức tạp, những mắt xích cuộc đời, những giây phút định mệnh của số phận đã khiến cô gặp được nam chính Tôn Gia Ngộ, một playboy thứ thiệt với vẻ hào nhoáng của một người đàn ông nhiều tiền, đẹp trai nhưng điểm nổi bật toát lên ở anh chính là tâm hồn thiện lương của mình...
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">20,476 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/2518.jpg?v=3&w=200&h=292" width="120" height="176" alt="Làm nên - 400 điều trường học vẫn không dạy bạn" title="Làm nên - 400 điều trường học vẫn không dạy bạn" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Làm nên - 400 điều trường học vẫn không dạy bạn</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">H.N. Casson</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 100%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">279 votes</p>
+                                                        <div class="product-item__intro">
+                                                            Cuốn sách Làm nên cần thiết cho tất cả các bạn trẻ – những người bắt đầu bước chân vào cuộc sống, những người đang hoang mang tìm cho mình một lối đi.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">12,343 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4">
+                                            <div class="product-item">
+                                                <div class="product-item-head">
+                                                    <div class="product-item-left">
+                                                        <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/17256.jpg?v=1&w=200&h=292" width="120" height="176" alt="Học từ cuộc sống" title="Học từ cuộc sống" class="product-item__img">
+                                                        <div class="product-item__book-icon"></div>
+                                                    </div>
+                                                    <div class="product-item-right">
+                                                        <h3 class="product-item__name">
+                                                            <a href="">Học từ cuộc sống</a>
+                                                        </h3>
+                                                        <h3 class="product-item__author">
+                                                            <a href="">Hữu Hưng</a>
+                                                        </h3>
+                                                        <div class="product-item__rate">
+                                                            <i class="rate-icon" style="width: 96%;"></i>
+                                                        </div>
+                                                        <p class="product-item__vote">403 votes</p>
+                                                        <div class="product-item__intro">Tôi xin dành tặng cuốn sách này cho những ai đang gặp đau khổ, thất bại, hay đang mất phương hướng trong cuộc sống. Biết đâu cuốn sách này sẽ giúp bạn vượt qua được những giờ phút khó khăn trong cuộc đời.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__break-line"></div>
+                                                <div class="product-item-footer">
+                                                    <p class="product-item__view">22,642 lượt xem</p>
+                                                    <div class="btn primary-color product-item__detail">Chi tiết</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Schedule -->
+            <section class="home-schedule-box">
+                <div class="grid wide">
+                    <div class="row no-gutters">
+                        <div class="schedule-container">
+                            <!-- left -->
+                            <div class="col l-3">
+                                
+                            </div>
+                            <!-- right -->
+                            <div class="col l-9">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quocte">
+                
+            </section>
+        </main>
+        
+
+        <footer class="footer">
+            <div class="grid wide">
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
