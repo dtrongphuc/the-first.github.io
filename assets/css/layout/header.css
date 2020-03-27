@@ -703,7 +703,208 @@
 
 /* Home schedule */
 .schedule-container {
-    height: 160px;
     width: 100%;
+}
+
+.shedule-left {
+    display: flex;
+    align-items: center;
+    height: 160px;
+    padding: 18px 24px;
     background-color: #8BD0DE;
+}
+
+.shedule-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 16px 30px;
+}
+
+.shedule-title__text,
+.shedule-title__year {
+    margin: 0;
+    font-size: 1.9rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.shedule-title__year {
+    position: relative;
+}
+
+.shedule-title__year::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+    top: 50%;
+    right: 100%;
+    transform: translate(-8%,-50%);
+}
+
+.shedule-title__year::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+}
+
+.shedule-title__month {
+    font-size: 3.4rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.shedule-title__corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.shedule-title__corner--top-left {
+    top: 0;
+    left: 0;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.shedule-title__corner--top-right {
+    top: 0;
+    right: 0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.shedule-title__corner--bottom-left {
+    bottom: 0;
+    left: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.shedule-title__corner--bottom-right {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.schedule-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:0 30px 0 6px;
+    background-color: #8BD0DE;
+    height: 100%;
+}
+
+.schedule-list {
+    display: flex;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+}
+
+.schedule-list::-webkit-scrollbar {
+    height: 6px;
+    background-color: #AEDEE8;
+    border-radius: 4px;
+}
+
+.schedule-list::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.schedule-list::-webkit-scrollbar-thumb:hover {
+    background-color: #1BA085;
+}
+
+.schedule-list__item {
+    display: flex;
+    align-items: center;
+    min-width: 240px;
+    height: 102px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 16px;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    transition: border 0.1s linear;
+    cursor: pointer;
+}
+
+.schedule-list__item:last-child {
+    margin-right: 0;
+}
+
+.schedule-list__item:hover {
+    border: 1px solid #3EA9BF;
+}
+
+.schedule-list__item-time {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8BD0DE;
+    color: #ffffff;
+    min-width: 72px;
+    max-width: 72px;
+    height: 72px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+.schedule-list__item-day-of-week {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.1;
+}
+
+.schedule-list__item-day-and-month {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.schedule-list__item-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 6px;
+}
+
+.schedule-list__item-title {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.schedule-list__item-episode {
+    font-size: 1.5rem;
+    color: #3A4752;
+    font-weight: 600;
+    line-height: 1.2rem;
 }
