@@ -98,3 +98,23 @@ h4 {
     background-color: var(--primary-color);
 }
 
+.item-hover-general {
+    border: 1px solid transparent;
+    transition: all 0.2s ease-out;
+}
+
+.item-hover-general:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.item__book-icon {
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center;
+    opacity: 0;
+    width: 54px;
+    height: 54px;
+    background: transparent url("../../img/book-icon.png");
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    will-change: transform, opacity;
+}
