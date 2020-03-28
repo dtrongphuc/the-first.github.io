@@ -303,6 +303,14 @@
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
+    .l-2-width-icon {
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+    .l-2-1 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
@@ -445,6 +453,10 @@
     .wide .l-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
+    }
+    .wide .l-2-width-icon {
+        flex: 0 0 16%;
+        max-width: 16%;
     }
     .wide .l-2-4 {
         flex: 0 0 20%;

@@ -109,6 +109,7 @@ h4 {
 
 .item__book-icon {
     position: absolute;
+    z-index: 10;
     transform: scale(0);
     transform-origin: center;
     opacity: 0;
@@ -117,4 +118,8 @@ h4 {
     background: transparent url("../../img/book-icon.png");
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     will-change: transform, opacity;
+}
+
+.center {
+    justify-content: center;
 }
