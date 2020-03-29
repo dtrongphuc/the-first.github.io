@@ -283,7 +283,9 @@
     .l-1,
     .l-2,
     .l-2-4,
+    .l-2-with-icon,
     .l-3,
+    .l-3-with-icon,
     .l-4,
     .l-5,
     .l-6,
@@ -303,13 +305,9 @@
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    .l-2-width-icon {
+    .l-2-with-icon {
         flex: 0 0 16%;
         max-width: 16%;
-    }
-    .l-2-1 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
     }
     .l-2-4 {
         flex: 0 0 20%;
@@ -318,6 +316,10 @@
     .l-3 {
         flex: 0 0 25%;
         max-width: 25%;
+    }
+    .l-3-with-icon {
+        flex: 0 0 24%;
+        max-width: 24%;
     }
     .l-4 {
         flex: 0 0 33.33333%;
@@ -434,7 +436,9 @@
     .wide .l-1,
     .wide .l-2,
     .wide .l-2-4,
+    .wide .l-2-with-icon,
     .wide .l-3,
+    .wide .l-3-with-icon
     .wide .l-4,
     .wide .l-5,
     .wide .l-6,
@@ -454,7 +458,7 @@
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    .wide .l-2-width-icon {
+    .wide .l-2-with-icon {
         flex: 0 0 16%;
         max-width: 16%;
     }
@@ -465,6 +469,10 @@
     .wide .l-3 {
         flex: 0 0 25%;
         max-width: 25%;
+    }
+    .wide .l-3-with-icon {
+        flex: 0 0 24%;
+        max-width: 24%;
     }
     .wide .l-4 {
         flex: 0 0 33.33333%;

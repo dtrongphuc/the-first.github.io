@@ -941,7 +941,7 @@
     position: absolute;
     display: none;
     z-index: 1;
-    top: 42%;
+    top: 134px;
     left: 0;
     right: 0;
     padding: 4px;
@@ -955,4 +955,14 @@
 .audio-book__title-footer {
     color: white;
     font-size: 1.3rem;
+}
+
+/* Comic */
+.comic {
+    background: transparent url(../../img/bg-box-comic.jpg) no-repeat;
+    height: 482px;
+    max-height: 482px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
