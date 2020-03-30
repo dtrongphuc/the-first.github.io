@@ -511,14 +511,16 @@
 }
 
 /* New */
-.box-new__container {
+.box-new__container,
+.selling__container {
     margin-top: 30px;
     padding: 16px 10px 24px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
     background-color: #fff;
 }
 
-.box-new__head {
+.box-new__head,
+.selling-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -526,30 +528,35 @@
     border-bottom: 1px solid #ECEDEE;
 }
 
-.box-new__heading a{
+.box-new__heading a,
+.selling__heading-link {
     display: block;
     font-size: 2rem;
     color: #3A4752;
     font-weight: 400;
 }
 
-.box-new__heading:hover > a{
+.box-new__heading:hover > a,
+.selling__heading:hover > a{
     color: var(--primary-color);
 }
 
-.box-new__view-all {
+.box-new__view-all,
+.selling__view-all {
     display: block;
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--primary-color);
 }
 
-.box-new__view-all:hover {
+.box-new__view-all:hover,
+.selling__view-all:hover {
     text-decoration: underline;
 }
 
 /* new main */
-.box-new__body {
+.box-new__body,
+.selling-body {
     margin-top: 20px;
     position: relative;
 }
@@ -965,4 +972,246 @@
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+}
+
+.comic-wraper {
+    padding: 16px 0;
+}
+
+.comic-head {
+    height: 110px;
+    max-height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.comic-btn__box {
+    width: 222px;
+    height: 110px;
+    max-height: 110px;
+    border: 2px solid #000;
+}
+
+.comic-btn__text-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.comic-btn__text {
+    cursor: pointer;
+}
+
+.comic-btn__text,
+.comic__description-text  {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'CC Astro City', Arial, sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.comic-body {
+    margin-top: 30px;
+    position: relative;
+}
+
+.comic__img--wrapper {
+    background-color: #000000;
+    border-radius: 4px;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+    transition: color linear 0.2s;
+    min-width: 220px;
+    max-width: 220px;
+}
+
+.comic__img--wrapper:hover {
+    /* Dung` js moi dung */
+    background-color: #ffffff;
+}
+
+.comic__img--active {
+    background-color: #ffffff;
+}
+
+.comic__img {
+    width: 185px;
+    height: 270px;
+    vertical-align: middle;
+}
+
+.comic-overlay {
+    position: absolute;
+    display: block;
+    width: 185px;
+    height: 270px;
+    top: 16px;
+    left: 17px;
+}
+
+.comic__description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 845px;
+    margin-left: 80px;
+}
+
+.comic__description-text  {
+    height: 74px;
+    font-size: 1.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comic__icon-swiper {
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(246, 244, 245);
+    top: 50%;
+    cursor: pointer;
+}
+
+.comic__icon-swiper:hover {
+    color: var(--primary-color);
+}
+
+.comic__icon-swiper--disable {
+    color: rgba(246, 244, 245, 0.15);
+    cursor: default;
+}
+
+.comic__icon-swiper--disable:hover {
+    color: rgba(246, 244, 245, 0.15);
+}
+
+.comic__icon-swiper--left {
+    left: 0;
+}
+
+.comic__icon-swiper--right {
+    right: 0;
+}
+
+/* Selling */
+
+.selling__item {
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: all linear 0.1s;
+}
+
+.selling__item:hover {
+    box-shadow: 10px 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.selling__item:hover .selling__item-head .selling__item-overlay {
+    display: flex;
+    opacity: 1;
+}
+
+.selling__item-head {
+    position: relative;
+    padding: 0px 12px 4px;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+.selling__item-img {
+    margin-top: 16px;
+    width: 140px;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.selling__item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+
+.selling__item-price {
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.selling__item-overlay {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    background-color: var(--primary-color);
+    transition: display ease 0.3s, opacity ease 0.3s;
+}
+
+.selling__item-name {
+    height: 50px;
+}
+
+.selling__item-name-link {
+    color: white;
+    text-align: left;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.selling__item-author {
+    margin-bottom: 12px;
+}
+
+.selling__item-author-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.selling__item-name-link:hover,
+.selling__item-author-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.selling__item-btn {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: all linear 0.1s;
+}
+
+.selling__item-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.selling__item-btn:hover {
+    background-color: white;
+}
+
+.selling__item-btn:hover a {
+    color: var(--primary-color);
 }

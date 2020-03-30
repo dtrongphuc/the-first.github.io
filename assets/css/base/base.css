@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: 'CC Astro City';
-    src: url(../../../font/CC_Astro_City_Regular.ttf);
+    src: url(../../font/CC_Astro_City_Regular.ttf);
 }
 
 @font-face {
     font-family: 'Minion';
-    src: url(../../../font/MinionPro-Medium.otf);
+    src: url(../../font/MinionPro-Medium.otf);
 }
 
 *{
@@ -122,4 +122,8 @@ h4 {
 
 .center {
     justify-content: center;
+}
+
+.hide {
+    display: none;
 }
