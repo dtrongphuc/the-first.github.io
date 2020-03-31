@@ -33,7 +33,7 @@
                             <a href="#" class="header__vip-link"></a>
                         </div>
                         <div class="header__login">
-                            <button class="btn primary-color header__login-btn">ĐĂNG NHẬP</button>
+                            <label for="modal__checkbox" class="btn primary-color header__login-btn">ĐĂNG NHẬP</label>
                         </div>
                     </div>
                 </div>
@@ -2555,23 +2555,69 @@
                 </div>
             </div>
         </footer>
-
-        <div class="modal fade">
-            <div class="modal-overlay">
-
-            </div>
-            <div class="modal-container">
+        <input type="checkbox" class="modal__input-checkbox" id="modal__checkbox">
+        <label for="modal__checkbox" class="modal-overlay" style="z-index: 9;"></label>
+        <label for="modal__checkbox" class="modal fade" style="z-index: 99;">
+            <div class="modal-container" style="z-index: 99;">
                 <div class="modal__header">
-
+                    <a href="" class="modal__header-logo-link" style="display: block;">
+                        <img src="https://static.vegaid.vn/popup/images/logo.png" alt="VegaID" class="modal__header-logo">
+                    </a>
+                    <h2 class="modal__header-heading">Đăng nhập</h2>
+                    <label  for="modal__checkbox" class="modal__header-icon-close">
+                        <i class="fal fa-times-circle"></i>
+                    </label>
                 </div>
                 <div class="modal__body">
-                    
+                    <div class="modal__body-heading">
+                        <p class="modal__body-text modal__body-text-f22">Đăng nhập một lần truy cập tất cả các dịch vụ của VEGA</p>
+                        <p class="modal__body-text modal__body-text-f15">Đăng nhập tài khoản VEGA ID của bạn</p>
+                    </div>
+                    <div class="modal__body-login">
+                        <div class="modal__body-login--left">
+                            <div class="modal__body-login-with-social modal__body-login-with-social--blue">
+                                <i class="fab fa-facebook-f"></i>
+                                Đăng nhập bằng Facebook
+                            </div>
+                            <div class="modal__body-login-with-social modal__body-login-with-social--red">
+                                <i class="fab fa-google-plus-g"></i>
+                                Đăng nhập bằng Google +
+                            </div>
+                        </div>
+                        <div class="modal__body-login--right">
+                            <form class="modal__body-form" action="" method="post">
+                                <div class="modal__body-header">
+                                    <input type="text" placeholder="Tên đăng nhập/Email/SĐT" class="modal__body-input">
+                                    <input type="password" placeholder="Mật khẩu" class="modal__body-input">
+                                </div>
+                                <div class="modal__body-footer">
+                                    <a href="" class="modal__body-rs-pass-link">Quên mật khẩu?</a>                                    
+                                    <input type="submit" value="Đăng nhập" class="moder__body-submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="moal__footer">
-                    
+                <div class="modal__footer">
+                    <a href="" class="modal__footer-register-link">Tạo tài khoản mới</a>
+                    <p class="modal__footer-text">Một tài khoản, sử dụng tất cả các dịch vụ của VEGA</p>
+                    <div class="modal__footer-icon-list">
+                        <a href="" class="modal__footer-icon-link">
+                            <img src="https://static.vegaid.vn/popup/images/clip.png" alt="Clip.vn" class="modal__footer-icon-img">
+                        </a>
+                        <a href="" class="modal__footer-icon-link">
+                            <img src="https://static.vegaid.vn/popup/images/nhac.png" alt="Nhac.vn" class="modal__footer-icon-img">
+                        </a>
+                        <a href="" class="modal__footer-icon-link">
+                            <img src="https://static.vegaid.vn/popup/images/waka.png" alt="Waka.vn" class="modal__footer-icon-img">
+                        </a>
+                        <a href="" class="modal__footer-icon-link">
+                            <img src="https://static.vegaid.vn/popup/images/gaba.png" alt="Gaba.vn" class="modal__footer-icon-img">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </label>
     </div>
 </body>
 </html>
