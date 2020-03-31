@@ -1,0 +1,147 @@
+/* Mobile & Tablet/Tablet pro */
+@media (max-width: 1024px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+    }
+    .home-banner__icon {
+        display: none;
+    } 
+    .home-banner__img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+    .customer-quote-mobile {
+        display: block;
+    }
+    .home-container {
+        padding: 0 10px 10px;
+        background-color: #ffffff;
+    }
+    .box-new__icon-swiper {
+        display: none;
+    }
+    .product-item {
+        position: unset;
+        height: unset;
+        background-color: unset;
+        margin-top: 10px;
+        width: auto;
+        padding: unset;
+        box-shadow: unset;
+        border-radius: unset;
+    }
+    .product-item__img {
+        margin-top: unset;
+        box-shadow: unset;
+        cursor: default;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #888888;
+        height: unset;
+        object-fit: fill;
+    }
+    .product-mobile__view-all {
+        display: block;
+        margin-top: 4px;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+    .item-hover-general {
+        border: none;
+    }
+    .item-hover-general:hover{
+        border: none;
+    }
+    .item__book-icon {
+        display: none;
+    }
+    .home-new {
+        background-color: #ffffff;
+    }
+    .box-new__container {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: unset;
+    }
+    .box-new__view-all {
+        display: none;
+    }
+    .box-new__item {
+        height: unset;
+        margin-top: 10px;   
+    }
+    .box-new__item-img {
+        height: unset;
+        object-fit: cover;
+        height: 100%;
+        border: 1px solid #888888;
+    }
+    .box-new__item-img--wrapper {
+        height: unset;
+    }
+    .box-new__item::before {
+        display: none;
+    }
+    .box-new__item,
+    .box-new__item-head {
+        border-radius: 0;
+    }
+    .audio-book-head {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .audio-book__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: unset;
+        border: 1px solid #888888;
+    }
+    .home-container--third {
+        margin-top: 10px;
+    }
+    .audio-book:hover .audio-book__title-overlay{
+        display: none;
+    }
+    .collection__container {
+        margin-top: 10px;
+        margin-bottom: 74px;
+    }
+    .collection__list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .collection__item-img {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+    .collection__item {
+        width: 48%;
+        height: auto;
+        margin-right: 0;
+        box-shadow: none;
+    }
+    .collection__item:hover .collection__item-overlay {
+        display: none;
+    }
+    
+    .collection__item:hover {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 1025px) {
+    .hide-on-pc {
+        display: none;
+    }
+}

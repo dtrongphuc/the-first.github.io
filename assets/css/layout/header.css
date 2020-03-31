@@ -330,29 +330,10 @@
 
 /* banner header bottom */
 
-.banner {
-    position: relative;
-    z-index: 0;
-}
-
 .home-banner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 278px;;
-}
-
-.home-banner__swaper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* transform: translateX(100%);
-    transition-property: transform;
-    animation-name: sideOut;
-    animation-timing-function: ease-out;
-    animation-duration: 4s;
-    animation-delay: 0;
-    animation-iteration-count: infinite; */
 }
 
 @keyframes sideOut {
@@ -646,3 +627,58 @@ input[type="submit"]:hover {
     opacity: 1;
 }
 
+.header-mobile {
+    height: 70px;
+    display: none;
+    align-items: center;
+}
+.header-mobile__bars-btn {
+    background: url("../../img/i-categories.png") center center no-repeat;
+    height: 50px;
+    width: 14%;
+    background-size: 20px;
+}
+.header-mobile__search-box {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+.header-mobile__search-input {
+    background: transparent url('../../img/i-search.png') no-repeat;
+    background-position: 24px center;
+    background-size: 16px;
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #757575;
+    padding-left: 46px;
+    border-radius: 20px;
+}
+.header-mobile__search-input::-webkit-input-placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+.header-mobile__vip {
+    background: url('../../img/vip@2x.png') center center no-repeat;
+    height: 50px;
+    width: 14%;
+    background-size: 20px;
+}
+.header-mobile__clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #B1B1B1;
+    font-size: 1.4rem;
+}
+.header-mobile__close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 14%;
+    font-size: 1.4rem;
+    color: #333333;
+}

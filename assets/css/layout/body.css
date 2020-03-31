@@ -1485,3 +1485,25 @@
     color: #fff;
     font-size: 2.6rem;
 }
+
+.customer-quote-mobile {
+    display: none;
+    margin-top: 20px;
+    padding: 0 12px;
+}
+
+.quote-mobile__name {
+    text-align: center;
+    font-size: 16px;
+    color: #3a4752;
+    font-weight: 700;
+}
+
+.quote-mobile__info {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 14px;
+    max-height: 68px;
+    overflow: hidden;
+}

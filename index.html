@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/layout/header.css">
     <link rel="stylesheet" href="./assets/css/layout/body.css">
     <link rel="stylesheet" href="./assets/css/layout/footer.css">
+    <link rel="stylesheet" href="./assets/css/base/responsive.css">
     <title>Waka - Nghe, đọc sách online mọi lúc, mọi nơi, trên mọi thiết bị</title>
 </head>
 <body>
@@ -18,7 +19,16 @@
         <!-- Header -->
         <header class="header">
             <div class="grid wide">
-                <div class="header__top">
+                <div class="header-mobile hide-on-pc">
+                    <div class="header-mobile__bars-btn" id="bars-icon"></div>
+                    <div class="header-mobile__search-box">
+                        <input type="text" placeholder="Nhập tên sách, tác giả,..." class="header-mobile__search-input">
+                        <!-- <i class="header-mobile__clear fas fa-times-circle"></i> -->
+                    </div>
+                    <!-- <label for="" class="header-mobile__close">Đóng</label> -->
+                    <div class="header-mobile__vip"></div>
+                </div>
+                <div class="header__top hide-on-mobile-tablet">
                     <div class="header__with-search">
                         <div class="header__logo">
                             <a href="" class="header__logo-link">
@@ -37,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__bottom">
+                <div class="header__bottom hide-on-mobile-tablet">
                     <div class="header__with-nav">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
@@ -187,6 +197,15 @@
             </div>
         </div>
 
+        <section class="customer-quote-mobile">
+            <div class="grid wide">
+                <div class="quote-mobile">
+                    <div class="quote-mobile__name">_BÓNG HÌNH CỦA GIÓ, Carlos Ruiz Zafón_</div>
+                    <div class="quote-mobile__info">Giá trị của bí mật phụ thuộc vào người mà nó được trao gửi để giữ kín.</div>
+                </div>
+            </div>
+        </section>
+
         <main class="home">
             <!-- Main product -->
             <section class="home-container">
@@ -194,7 +213,7 @@
                     <div class="row">
                         <!-- Navbar -->
                         <div class="col l-3">
-                            <div class="category">
+                            <div class="category hide-on-mobile-tablet">
                                 <div class="category-heading-wrapper">
                                     <h2 class="category__heading">Danh mục</h2>
                                     <i class="fal fa-list-ul"></i>
@@ -600,13 +619,13 @@
                         </div>
 
                         <!-- Product -->
-                        <div class="col l-9">
+                        <div class="col l-9 c-12 m-12">
                             <div class="product-container">
                                 <div class="home-filter">
                                     <a href="" class="home-filter-heading-link">
                                         <h2 class="home-filter__heading">Miễn phí HOT</h2>
                                     </a>
-                                    <ul class="home-filter-list">
+                                    <ul class="home-filter-list hide-on-mobile-tablet">
                                         <li class="filter-item filter-item--active">
                                             <a href="javascript:void(0)" class="filter-item__link">Tất cả</a>
                                         </li>
@@ -629,14 +648,14 @@
                                 </div>
                                 <div class="home-product">
                                     <div class="row">
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/20802.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nhặt được vương phi tham tiền - Tập 1" title="Nhặt được vương phi tham tiền - Tập 1" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Nhặt được vương phi tham tiền - Tập 1</a>
                                                         </h3>
@@ -650,21 +669,21 @@
                                                         <div class="product-item__intro">Hạ Sơ Thất – bác sỹ quân y quân hàm Trung úy trong bộ đội đặc công, chỉ vì lấy trộm chiếc gương gỗ đào của một người bạn mà xuyên tới vùng nông thôn ở một triều đại cổ xưa nào đó. </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">33,170 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/19373.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nhật ký cua trai của Nữ phụ - Tập 2" title="Nhật ký cua trai của Nữ phụ - Tập 2" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Nhật ký cua trai của Nữ phụ - Tập 2</a>
                                                         </h3>
@@ -681,21 +700,21 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">20,094 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/700.jpg?v=2&w=200&h=292" width="120" height="176" alt="Nơi nào đông ấm (Tập 1)" title="Nơi nào đông ấm (Tập 1)" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Nơi nào đông ấm (Tập 1)</a>
                                                         </h3>
@@ -711,21 +730,21 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">18,940 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/629.jpg?v=2&w=200&h=292" width="120" height="176" alt="Từng có một người yêu tôi như sinh mệnh (Tập 1)" title="Từng có một người yêu tôi như sinh mệnh (Tập 1)" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Từng có một người yêu tôi như sinh mệnh (Tập 1)</a>
                                                         </h3>
@@ -739,25 +758,25 @@
                                                         <div class="product-item__intro">
                                                             Giới thiệu cuốn sách Từng Có Một Người Yêu Tôi Như Sinh Mệnh của Thư Nghi:
 
-                                                        Câu chuyện miêu tả cuộc đời của một cô sinh viên bình thường sống ở đất nước Ukraine phức tạp, những mắt xích cuộc đời, những giây phút định mệnh của số phận đã khiến cô gặp được nam chính Tôn Gia Ngộ, một playboy thứ thiệt với vẻ hào nhoáng của một người đàn ông nhiều tiền, đẹp trai nhưng điểm nổi bật toát lên ở anh chính là tâm hồn thiện lương của mình...
-                                                    </div>
+                                                            Câu chuyện miêu tả cuộc đời của một cô sinh viên bình thường sống ở đất nước Ukraine phức tạp, những mắt xích cuộc đời, những giây phút định mệnh của số phận đã khiến cô gặp được nam chính Tôn Gia Ngộ, một playboy thứ thiệt với vẻ hào nhoáng của một người đàn ông nhiều tiền, đẹp trai nhưng điểm nổi bật toát lên ở anh chính là tâm hồn thiện lương của mình...
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">20,476 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/2518.jpg?v=3&w=200&h=292" width="120" height="176" alt="Làm nên - 400 điều trường học vẫn không dạy bạn" title="Làm nên - 400 điều trường học vẫn không dạy bạn" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Làm nên - 400 điều trường học vẫn không dạy bạn</a>
                                                         </h3>
@@ -772,21 +791,21 @@
                                                             Cuốn sách Làm nên cần thiết cho tất cả các bạn trẻ – những người bắt đầu bước chân vào cuộc sống, những người đang hoang mang tìm cho mình một lối đi.</div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">12,343 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 c-4 m-4">
                                             <div class="product-item item-hover-general">
                                                 <div class="product-item-head">
                                                     <div class="product-item-left">
                                                         <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/17256.jpg?v=1&w=200&h=292" width="120" height="176" alt="Học từ cuộc sống" title="Học từ cuộc sống" class="product-item__img">
                                                         <div class="item__book-icon item__book-icon--book"></div>
                                                     </div>
-                                                    <div class="product-item-right">
+                                                    <div class="product-item-right hide-on-mobile-tablet">
                                                         <h3 class="product-item__name">
                                                             <a href="">Học từ cuộc sống</a>
                                                         </h3>
@@ -800,23 +819,23 @@
                                                         <div class="product-item__intro">Tôi xin dành tặng cuốn sách này cho những ai đang gặp đau khổ, thất bại, hay đang mất phương hướng trong cuộc sống. Biết đâu cuốn sách này sẽ giúp bạn vượt qua được những giờ phút khó khăn trong cuộc đời.</div>
                                                     </div>
                                                 </div>
-                                                <div class="product-item__break-line"></div>
-                                                <div class="product-item-footer">
+                                                <div class="product-item__break-line hide-on-mobile-tablet"></div>
+                                                <div class="product-item-footer hide-on-mobile-tablet">
                                                     <p class="product-item__view">22,642 lượt xem</p>
                                                     <div class="btn primary-color product-item__detail">Chi tiết</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <a href="" class="product-mobile__view-all hide-on-pc">Xem tất cả</a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Schedule -->
-            <section class="home-schedule-box">
+            <section class="home-schedule-box hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="row no-gutters">
                         <!-- left -->
@@ -967,16 +986,16 @@
                         <div class="box-new__body">
                             <div class="row center">
                                 <i class="box-new__icon-swiper box-new__icon-swiper--left box-new__icon-swiper--disable far fa-chevron-left"></i>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25227.jpg?v=1&w=200&h=292" alt="Đông Túy Hạ Hàm - Tập 3" title="Đông Túy Hạ Hàm - Tập 3" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Đông Túy Hạ Hàm - Tập 3</a>
                                             </div>
@@ -984,23 +1003,23 @@
                                                 <a href="" class="box-new__item-link">Miêu Lão Sư</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (16 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25225.jpg?v=1&w=200&h=292" alt="Xuyên nhanh: Nhiệm vụ Ái Hồn - Tập 8" title="Xuyên nhanh: Nhiệm vụ Ái Hồn - Tập 8" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Xuyên nhanh: Nhiệm vụ Ái Hồn - Tập 8</a>
                                             </div>
@@ -1008,23 +1027,23 @@
                                                 <a href="" class="box-new__item-link">Một Con Mèo Ngốc</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (31 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25224.jpg?v=1&w=200&h=292" alt="Ấm áp có em, ngọt ngào có anh - Tập 21" title="Ấm áp có em, ngọt ngào có anh - Tập 21" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Ấm áp có em, ngọt ngào có anh - Tập 21</a>
                                             </div>
@@ -1032,23 +1051,23 @@
                                                 <a href="" class="box-new__item-link">Quẫn Quẫn Hữu Yêu</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (71 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25221.jpg?v=1&w=200&h=292" alt="Nông viên tự cẩm - Tập 23" title="Nông viên tự cẩm - Tập 23" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Nông viên tự cẩm - Tập 23</a>
                                             </div>
@@ -1056,23 +1075,23 @@
                                                 <a href="" class="box-new__item-link">Quỹ Họa Tình Vũ</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (30 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25218.jpg?v=1&w=200&h=292" alt="Uông xưởng công - Tập 27" title="Uông xưởng công - Tập 27" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Uông xưởng công - Tập 27</a>
                                             </div>
@@ -1080,23 +1099,23 @@
                                                 <a href="" class="box-new__item-link">Bình Bạch Huynh</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (29 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25216.jpg?v=1&w=200&h=292" alt="Tiểu thư hầu phủ - Tập 19" title="Tiểu thư hầu phủ - Tập 19" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Tiểu thư hầu phủ - Tập 19</a>
                                             </div>
@@ -1104,7 +1123,7 @@
                                                 <a href="" class="box-new__item-link">Tiểu Ngọc Hồ</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (21 votes)</span>
@@ -1114,15 +1133,16 @@
                                 <i class="box-new__icon-swiper  box-new__icon-swiper--right far fa-chevron-right"></i>
                             </div>
                         </div>
+                        <a href="" class="product-mobile__view-all hide-on-pc">Xem tất cả</a>
                     </div>
                 </div>
             </section>
             
-            <section class="home-container--second">
+            <section class="home-container--second hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-3">
-                            <div class="home-rank">
+                            <div class="home-rank hide-on-mobile-tablet">
                                 <div class="home-rank__heading--wrapper">
                                     <h2 class="home-rank__heading">BXH THÁNG 03/2020</h2>
                                     <div class="home-rank__icon"></div>
@@ -1192,13 +1212,13 @@
                             </div>
                         </div>
 
-                        <div class="col l-9">
+                        <div class="col l-9 c-12 m-12">
                             <div class="product-container">
                                 <div class="home-filter">
                                     <a href="" class="home-filter-heading-link">
                                         <h2 class="home-filter__heading">Đọc nhiều nhất</h2>
                                     </a>
-                                    <ul class="home-filter-list">
+                                    <ul class="home-filter-list hide-on-mobile-tablet">
                                         <li class="filter-item filter-item--active">
                                             <a href="javascript:void(0)" class="filter-item__link">Tất cả</a>
                                         </li>
@@ -1505,16 +1525,16 @@
                         <div class="box-new__body">
                             <div class="row center">
                                 <i class="box-new__icon-swiper box-new__icon-swiper--left box-new__icon-swiper--disable far fa-chevron-left"></i>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/25113.jpg?v=1&w=200&h=292" alt="Nhân sự cốt cán" title="Nhân sự cốt cán" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Nhân sự cốt cán</a>
                                             </div>
@@ -1522,23 +1542,23 @@
                                                 <a href="" class="box-new__item-link">Seth Godin</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">4.75</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (16 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/24999.jpg?v=1&w=200&h=292" alt="Cẩm nang mở nhà hàng" title="Cẩm nang mở nhà hàng" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Cẩm nang mở nhà hàng</a>
                                             </div>
@@ -1546,23 +1566,23 @@
                                                 <a href="" class="box-new__item-link">Roger Fields</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (52 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/24997.jpg?v=1&w=200&h=292" alt="Bí mật của người kể chuyện" title="Bí mật của người kể chuyện" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Bí mật của người kể chuyện</a>
                                             </div>
@@ -1570,23 +1590,23 @@
                                                 <a href="" class="box-new__item-link">Carmine Gallo</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (47 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/24996.jpg?v=1&w=200&h=292" alt="27 thách thức của nhà quản lý" title="27 thách thức của nhà quản lý" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">27 thách thức của nhà quản lý</a>
                                             </div>
@@ -1594,23 +1614,23 @@
                                                 <a href="" class="box-new__item-link">Bruce Tulgan</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (11 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/24991.jpg?v=1&w=200&h=292" alt="Lean out - Vươn mình" title="Lean out - Vươn mình" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Lean out - Vươn mình</a>
                                             </div>
@@ -1618,23 +1638,23 @@
                                                 <a href="" class="box-new__item-link">Marissa Orr</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">5.00</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (8 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-2-with-icon">
+                                <div class="col l-2-with-icon c-4 m-4">
                                     <div class="box-new__item">
                                         <div class="box-new__item-head">
                                             <div href="" class="box-new__item-img--wrapper">
                                                 <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/24884.jpg?v=1&w=200&h=292" alt="Lấy khách hàng làm trung tâm - Yếu tố phát triển thương hiệu bền vững" title="Lấy khách hàng làm trung tâm - Yếu tố phát triển thương hiệu bền vững" class="box-new__item-img">
                                             </div>
                                             <a href="" class="box-new__item-link--wrapper-img"></a>
-                                            <div class="item__book-icon item__book-icon--box-new"></div>
+                                            <div class="item__book-icon item__book-icon--box-new hide-on-mobile-tablet"></div>
                                         </div>
-                                        <div class="box-new__item-body">
+                                        <div class="box-new__item-body hide-on-mobile-tablet">
                                             <div class="box-new__item-name">
                                                 <a href="" class="box-new__item-link">Lấy khách hàng làm trung tâm - Yếu tố phát triển thương hiệu bền vững</a>
                                             </div>
@@ -1642,15 +1662,16 @@
                                                 <a href="" class="box-new__item-link">Kyle M. K</a>
                                             </div>
                                         </div>
-                                        <div class="box-new__item-footer">
+                                        <div class="box-new__item-footer hide-on-mobile-tablet">
                                             <span class="box-new__item-vote box-new__item-vote--primary-color">4.92</span>
                                             <span class="box-new__item-vote">/5</span>
                                             <span class="box-new__item-vote box-new__item-vote--opaque"> (13 votes)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <i class="box-new__icon-swiper  box-new__icon-swiper--right far fa-chevron-right"></i>
+                                <i class="box-new__icon-swiper box-new__icon-swiper--right far fa-chevron-right"></i>
                             </div>
+                            <a href="" class="product-mobile__view-all hide-on-pc">Xem tất cả</a>
                         </div>
                     </div>
                 </div>
@@ -1660,7 +1681,7 @@
                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-3">
-                            <div class="most-view">
+                            <div class="most-view hide-on-mobile-tablet">
                                 <div class="most-view__head">
                                     <h2 class="most-view__heading">NGHE NHIỀU NHẤT</h2>
                                     <i class="most-view__icon fal fa-headphones"></i>
@@ -1719,7 +1740,7 @@
                                     <a href="" class="home-filter-heading-link">
                                         <h2 class="home-filter__heading">Sách nói</h2>
                                     </a>
-                                    <ul class="home-filter-list">
+                                    <ul class="home-filter-list hide-on-mobile-tablet">
                                         <li class="filter-item filter-item--active">
                                             <a href="javascript:void(0)" class="filter-item__link">Tất cả</a>
                                         </li>
@@ -1742,9 +1763,9 @@
                                 </div>
                                 <div class="home-product home-product--audio">
                                     <div class="row">
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">04 giờ, 24 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Phát triển bản thân</div>
                                                 </div>
@@ -1753,7 +1774,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">Nghĩ giàu làm giàu</a>
                                                     </h3>
@@ -1762,39 +1783,14 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">16,139  lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
-                                                    <div class="audio-book__title-head">11 giờ, 05 phút</div>
-                                                    <div class="audio-book__title-footer">Sách nói, Truyện đọc</div>
-                                                </div>
-                                                <div class="audio-book-head">
-                                                    <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.audio_book/0/0/0/129.jpg?v=1&w=200&h=292" title="Đốt cháy băng giá" alt="Đốt cháy băng giá" class="audio-book__img">
-                                                    <a href="" class="audio-book__overlay"></a>
-                                                    <div class="item__book-icon item__book-icon--play"></div>
-                                                </div>
-                                                <div class="audio-book-body">
-                                                    <h3 class="audio-book__heading">
-                                                        <a href="" class="audio-book__heading-link">Đốt cháy băng giá</a>
-                                                    </h3>
-                                                    <div class="audio-book__author">
-                                                        <a href="" class="audio-book__author-link">Tim Bowler</a>
-                                                    </div>
-                                                    <div class="product-item__break-line"></div>
-                                                </div>
-                                                <div class="audio-book-footer">
-                                                    <span class="audio-book__view">1,540 lượt nghe</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col l-3">
-                                            <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">43 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Bí quyết kinh doanh</div>
                                                 </div>
@@ -1803,7 +1799,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">[Tóm tắt sách] - Bí mật phía sau điện toán đám mây"</a>
                                                     </h3>
@@ -1812,14 +1808,14 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">3,435 lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">09 giờ, 30 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Truyện đọc</div>
                                                 </div>
@@ -1828,7 +1824,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">Anh biết gió từ đâu tới (Tập 1)</a>
                                                     </h3>
@@ -1837,14 +1833,14 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">7,516 lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">43 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Phát triển bản thân</div>
                                                 </div>
@@ -1853,7 +1849,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">[Tóm tắt sách] Trí tuệ xã hội</a>
                                                     </h3>
@@ -1862,14 +1858,14 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">8,508 lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">44 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Phát triển bản thân</div>
                                                 </div>
@@ -1878,7 +1874,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">Người giỏi không phải là người làm tất cả</a>
                                                     </h3>
@@ -1887,14 +1883,14 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">31,422 lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-3 c-4 m-4">
                                             <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
+                                                <div class="audio-book__title-overlay hide-on-mobile-tablet">
                                                     <div class="audio-book__title-head">36 phút</div>
                                                     <div class="audio-book__title-footer">Sách nói, Bí quyết kinh doanh</div>
                                                 </div>
@@ -1903,7 +1899,7 @@
                                                     <a href="" class="audio-book__overlay"></a>
                                                     <div class="item__book-icon item__book-icon--play"></div>
                                                 </div>
-                                                <div class="audio-book-body">
+                                                <div class="audio-book-body hide-on-mobile-tablet">
                                                     <h3 class="audio-book__heading">
                                                         <a href="" class="audio-book__heading-link">[Tóm tắt sách] Dẫn dắt sếp</a>
                                                     </h3>
@@ -1912,45 +1908,21 @@
                                                     </div>
                                                     <div class="product-item__break-line"></div>
                                                 </div>
-                                                <div class="audio-book-footer">
+                                                <div class="audio-book-footer hide-on-mobile-tablet">
                                                     <span class="audio-book__view">2,880 lượt nghe</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col l-3">
-                                            <div class="product-item audio-book item-hover-general">
-                                                <div class="audio-book__title-overlay">
-                                                    <div class="audio-book__title-head">31 phút</div>
-                                                    <div class="audio-book__title-footer">Sách nói, Truyện thiếu nhi</div>
-                                                </div>
-                                                <div class="audio-book-head">
-                                                    <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.audio_book/0/0/0/825.jpg?v=1&w=200&h=292" title="The Arabian Nights - Nghìn lẻ một đêm" alt="The Arabian Nights - Nghìn lẻ một đêm" class="audio-book__img">
-                                                    <a href="" class="audio-book__overlay"></a>
-                                                    <div class="item__book-icon item__book-icon--play"></div>
-                                                </div>
-                                                <div class="audio-book-body">
-                                                    <h3 class="audio-book__heading">
-                                                        <a href="" class="audio-book__heading-link">The Arabian Nights - Nghìn lẻ một đêm</a>
-                                                    </h3>
-                                                    <div class="audio-book__author">
-                                                        <a href="" class="audio-book__author-link">Đang cập nhật</a>
-                                                    </div>
-                                                    <div class="product-item__break-line"></div>
-                                                </div>
-                                                <div class="audio-book-footer">
-                                                    <span class="audio-book__view">2,464 lượt nghe</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <a href="" class="product-mobile__view-all hide-on-pc">Xem tất cả</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="comic">
+            <section class="comic hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="comic-wraper">
                         <div class="comic-head">
@@ -2000,7 +1972,7 @@
                 </div>
             </section>
 
-            <section class="selling">
+            <section class="selling hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="selling__container">
                         <div class="selling-head">
@@ -2162,9 +2134,10 @@
                     <div class="collection__container">
                         <div class="selctive-head">
                             <h2 class="collection__heading">
-                                <a href="" class="collection__heading-link">Những tuyển tập chọn lọc hay nhất</a>
+                                <a href="" class="collection__heading-link hide-on-mobile-tablet">Những tuyển tập chọn lọc hay nhất</a>
+                                <a href="" class="collection__heading-link hide-on-pc">Tuyển tập chọn lọc</a>
                             </h2>
-                            <a href="" class="collection__view-all">XEM TẤT CẢ</a>
+                            <a href="" class="collection__view-all hide-on-mobile-tablet">XEM TẤT CẢ</a>
                         </div>
                         <div class="collection-body">
                             <i class="box-new__icon-swiper box-new__icon-swiper--left box-new__icon-swiper--disable far fa-chevron-left"></i>
@@ -2172,7 +2145,7 @@
                                 <li class="collection__item">
                                     <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/757.jpg?v=1&w=332&h=162" alt="Tủ sách thay đổi tư duy Marketing của bạn" title="Tủ sách thay đổi tư duy Marketing của bạn" class="collection__item-img">
                                     <a href="" title="Tủ sách thay đổi tư duy Marketing của bạn" class="collection__item-link"></a>
-                                    <span class="collection__item-count">
+                                    <span class="collection__item-count hide-on-mobile-tablet">
                                         <span class="collection__item-inner-count">16</span>
                                     </span>
                                     <div class="collection__item-overlay">
@@ -2184,7 +2157,7 @@
                                 <li class="collection__item">
                                     <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/305.jpg?v=1&w=332&h=162" alt="9 Cuốn Sách Phải Đọc Dành Cho Người Khởi Nghiệp" title="9 Cuốn Sách Phải Đọc Dành Cho Người Khởi Nghiệp" class="collection__item-img">
                                     <a href="" title="9 Cuốn Sách Phải Đọc Dành Cho Người Khởi Nghiệp" class="collection__item-link"></a>
-                                    <span class="collection__item-count">
+                                    <span class="collection__item-count hide-on-mobile-tablet">
                                         <span class="collection__item-inner-count">11</span>
                                     </span>
                                     <div class="collection__item-overlay">
@@ -2196,7 +2169,7 @@
                                 <li class="collection__item">
                                     <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/277.jpg?v=3&w=332&h=162" alt="Những  Cuốn Sách Nên Đọc Để Thay Đổi Nhận Thức" title="Những  Cuốn Sách Nên Đọc Để Thay Đổi Nhận Thức" class="collection__item-img">
                                     <a href="" title="Những  Cuốn Sách Nên Đọc Để Thay Đổi Nhận Thức" class="collection__item-link"></a>
-                                    <span class="collection__item-count">
+                                    <span class="collection__item-count hide-on-mobile-tablet">
                                         <span class="collection__item-inner-count">6</span>
                                     </span>
                                     <div class="collection__item-overlay">
@@ -2208,7 +2181,7 @@
                                 <li class="collection__item">
                                     <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/317.jpg?v=3&w=332&h=162" alt="Những Cuốn Sách Giúp Bạn Tự Tin Trong Thuyết Trình" title="Những Cuốn Sách Giúp Bạn Tự Tin Trong Thuyết Trình" class="collection__item-img">
                                     <a href="" title="Những Cuốn Sách Giúp Bạn Tự Tin Trong Thuyết Trình" class="collection__item-link"></a>
-                                    <span class="collection__item-count">
+                                    <span class="collection__item-count hide-on-mobile-tablet">
                                         <span class="collection__item-inner-count">5</span>
                                     </span>
                                     <div class="collection__item-overlay">
@@ -2220,16 +2193,17 @@
                             </ul>
                             <i class="box-new__icon-swiper box-new__icon-swiper--right far fa-chevron-right"></i>
                         </div>
+                        <a href="" class="product-mobile__view-all hide-on-pc">Xem tất cả</a>
                     </div>
                 </div>
             </section>
 
-            <section class="advice">
+            <section class="advice hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="advice__container">
                         <div class="advice-head">
                             <h2 class="advice__heading">
-                                <a href="" class="advice__heading-link">Bán chạy nhất waka</a>
+                                <a href="" class="advice__heading-link">Sách Waka khuyên đọc</a>
                             </h2>
                             <a href="" class="advice__view-all">XEM TẤT CẢ</a>
                         </div>
@@ -2381,7 +2355,7 @@
                 </div>
             </section>
 
-            <section class="thank-quote">
+            <section class="thank-quote hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="thank-quote-container">
                         <div class="thank-quote-head">
@@ -2440,7 +2414,7 @@
                 </div>
             </section>
 
-            <section class="customer-quote">
+            <section class="customer-quote hide-on-mobile-tablet">
                 <div class="grid wide">
                     <div class="customer-quote-container">
                         <i class="customer-quote__icon-swiper customer-quote__icon-swiper--left customer-quote__icon-swiper--disable far fa-chevron-left"></i>
@@ -2473,7 +2447,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer hide-on-mobile-tablet">
             <div class="grid wide">
                 <div class="footer-container">
                     <div class="footer-head">
@@ -2555,9 +2529,23 @@
                 </div>
             </div>
         </footer>
+        <footet class="footer-mobile hide-on-pc">
+            <div class="footer-mobile--left">
+                <img src="./assets/img/logo@2x.png" alt="" class="footer-mobile__img">
+            </div>
+            <div class="footer-mobile--mid">
+                <h3 class="footer-mobile__heading">CÀI ỨNG DỤNG WAKA</h3>
+                <p class="footer-mobile__text">Đọc sách, tích điểm, đổi quà, bình luận sách,...</p>
+            </div>
+            <div class="footer-mobile--right">
+                <div class="footer-mobile__download-btn">
+                    <a href="">TẢI APP</a>
+                </div>
+            </div>
+        </footet>
         <input type="checkbox" class="modal__input-checkbox" id="modal__checkbox">
-        <label for="modal__checkbox" class="modal-overlay" style="z-index: 9;"></label>
-        <label for="modal__checkbox" class="modal fade" style="z-index: 99;">
+        <label for="modal__checkbox" class="modal-overlay hide-on-mobile-tablet" style="z-index: 9;"></label>
+        <label for="modal__checkbox" class="modal fade hide-on-mobile-tablet" style="z-index: 99;">
             <div class="modal-container" style="z-index: 99;">
                 <div class="modal__header">
                     <a href="" class="modal__header-logo-link" style="display: block;">

@@ -102,3 +102,62 @@
     height: 44px;
     max-height: 44px;
 }
+
+.footer-mobile {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    background-color: rgba(55, 171, 144,0.9);
+}
+
+.footer-mobile--left {
+
+}
+
+.footer-mobile__img {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mobile--mid {
+    margin-left: 8px;
+}   
+
+.footer-mobile__heading {
+    color: #fff;
+    text-align: left;
+    line-height: 2.4rem;
+}
+
+.footer-mobile__text {
+    color: #fff;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.footer-mobile--right {
+
+}
+
+.footer-mobile__download-btn a{
+    display: inline-block;
+    color: #1ca081;
+    font-size: 1.1rem;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 58px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.5rem;
+}
