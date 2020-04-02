@@ -117,10 +117,6 @@
     background-color: rgba(55, 171, 144,0.9);
 }
 
-.footer-mobile--left {
-
-}
-
 .footer-mobile__img {
     width: 50px;
     display: flex;
@@ -143,10 +139,6 @@
     text-align: left;
     font-size: 1.1rem;
     line-height: 1.4rem;
-}
-
-.footer-mobile--right {
-
 }
 
 .footer-mobile__download-btn a{
